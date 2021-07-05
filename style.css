@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:#F46060;
+    --secondary:#EE5A24;
+    --ternary:#776B69;
+    --ternary-bold:#000000;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+a,p,li,button{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 45px auto;
+}
+
+
+
+
+/* ------------------------------navbar style--------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 2rem; */
+}
+/* ---right side nav--- */
+header .right-side-nav .nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+header .right-side-nav .nav-link li a{
+    font-size: 1.1rem;
+    color: var(--primary);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+header .right-side-nav .nav-link li a:hover{
+    background-color: var(--secondary);
+    border-radius: 20px;
+    color: white;
+}
+
+/* ---left side nav--- */
+header .left-side-nav p{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--primary);
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+header .left-side-nav p:hover{
+    color: var(--secondary);
+}
+
+
+
+/* ------------------------------hero style--------------------------------- */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+/* --left side hero-- */
+.hero .left-side-hero{
+    width: 50%;
+}
+
+.hero .left-side-hero h1{
+    font-size: 3.5rem;
+    color: var(--ternary-bold);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Roboto', serif;
+    margin-bottom: 1rem;
+}
+
+.hero .left-side-hero h1  span{
+    color: var(--primary);
+}
+
+.hero .left-side-hero p{
+    color: var(--ternary);
+    margin-bottom: 1rem;
+    word-spacing: .1rem;
+    letter-spacing: .2px;
+    text-align: justify;
+}
+
+.hero .left-side-hero button{
+    border: none;
+    padding: 15px 25px;
+    background-color: var(--primary);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero .left-side-hero button:hover{
+    background-color: var(--secondary);
+}
+
+/* --right side hero-- */
+.hero .right-side-hero{
+    width: 50%;
+}
+
+.hero .right-side-hero img{
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+    margin-left: 5rem; 
+}
+
+
+/* ------------------------------about style--------------------------------- */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+}
+/* --left side about style-- */
+.about .left-side-about{
+    width: 50%;
+}
+
+.about .left-side-about img{
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+    margin-right: 4rem;
+}
+/* --right side about style-- */
+.about .right-side-about{
+    width: 50%;
+}
+
+.about .right-side-about h1{
+    font-size: 2.5rem;
+    color: var(--ternary-bold);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Roboto', serif;
+    margin-bottom: 1rem;
+}
+
+.about .right-side-about p{
+    color: var(--ternary);
+    margin-bottom: 1rem;
+    word-spacing: .1rem;
+    letter-spacing: .2px;
+    text-align: justify;
+}
+
+/* ------------------------------card style--------------------------------- */
+
+/* --title-- */
+
+.working-project h1{
+    font-size: 2.5rem;
+    color: var(--ternary-bold);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Roboto', serif;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.working-project h1 span{
+    color: var(--primary);
+}
+
+.working-project .project-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.working-project .project-card .card{
+    width: 22rem;
+    height: 30rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.working-project .project-card .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.working-project .project-card .card .card-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.working-project .project-card .card .card-text{
+    padding: 2.2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.working-project .project-card .card .card-text h2{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--ternary-bold);
+    margin-bottom: 1rem;
+}
+
+.working-project .project-card .card .card-text p{
+    color: var(--ternary);
+    margin-bottom: 1rem;
+    word-spacing: .1rem;
+    letter-spacing: .2px;
+    text-align: justify;
+}
+
+
+
+
+/* ------------------------------quotes style--------------------------------- */
+
+
+.quotes-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    width: 750px;
+    background-color: gray;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: 100px;
+}
+
+.quotes-part .left-side-quotes img{
+    width: 48%;
+    margin-left: 40px;
+}
+
+.quotes-part .right-side-quotes p{
+    width: 80%;
+    text-align: justify;
+    margin-right: 200px;
+    position: relative;
+    color: white;
+}
+
+
+.quotes-part .right-side-quotes p::before{
+    content: '\201c';
+    top: -55px;
+    left: -50px;
+    color: white;
+}
+
+.quotes-part .right-side-quotes p::after{
+    content: '\201d';
+    bottom: -135px;
+    color: white;
+}
+
+.quotes-part .right-side-quotes p::before,
+.quotes-part .right-side-quotes p::after{
+    font-size: 9rem;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
